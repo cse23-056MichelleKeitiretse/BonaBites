@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="BonaBites - Premium Burger Restaurant offering gourmet burgers, fresh ingredients, and exceptional dining experience" />
+    <meta name="theme-color" content="#0d0d1a" />
+    <title>BonaBites | Gourmet Burgers & More</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/modern-style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<!-- Loading Screen -->
+<div class="loading">
+    <div class="loader"></div>
+</div>
+
+<!-- Back to Top Button -->
+<button class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<header>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="navbar-container">
+            <a href="index.html" class="logo" tabindex="0">Bona<span>Bites</span></a>
+            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="menu-list" id="primary-menu" role="menubar">
+                <li class="menu-list-item active" role="none"><a href="index.html" role="menuitem" aria-current="page">Home</a></li>
+                <li class="menu-list-item" role="none"><a href="menu.html" role="menuitem">Menu</a></li>
+                <li class="menu-list-item" role="none"><a href="gallery.html" role="menuitem">Gallery</a></li>
+                <li class="menu-list-item" role="none"><a href="reserve.html" role="menuitem">Reservations</a></li>
+                <li class="menu-list-item" role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="hero">
+        <div class="hero-content" tabindex="0">
+            <h1>EXPERIENCE THE ULTIMATE BURGER TASTE</h1>
+            <p>Handcrafted with premium ingredients and served with a side of perfection</p>
+            <div class="hero-buttons">
+                <a href="menu.html" class="btn">View Our Menu</a>
+                <a href="reserve.html" class="btn btn-outline">Reserve a Table</a>
+            </div>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+            <img src="images/burger2.jpeg" alt="Delicious Burger" loading="eager" />
+        </div>
+    </section>
+
+    <section class="featured-section">
+        <div class="section-header">
+            <h2>Our Signature Burgers</h2>
+            <p>Handcrafted with the finest ingredients for an unforgettable experience</p>
+        </div>
+        <div class="image-container" aria-label="Featured burgers">
+            <a href="#" class="burger-item" tabindex="0">
+                <img src="images/burger1.jpeg" alt="Smoky BBQ Burger" loading="lazy" />
+                <div class="caption">Smoky BBQ Burger</div>
+            </a>
+            <a href="#" class="burger-item" tabindex="0">
+                <img src="images/burger2.jpeg" alt="Mushroom Swiss Burger" loading="lazy" />
+                <div class="caption">Mushroom Swiss Burger</div>
+            </a>
+            <a href="#" class="burger-item" tabindex="0">
+                <img src="images/burger5.jpeg" alt="Cheese Lover's Burger" loading="lazy" />
+                <div class="caption">Cheese Lover's Burger</div>
+            </a>
+            <a href="#" class="burger-item" tabindex="0">
+                <img src="images/burger6.jpeg" alt="Bacon Deluxe Burger" loading="lazy" />
+                <div class="caption">Bacon Deluxe Burger</div>
+            </a>
+            <a href="#" class="burger-item" tabindex="0">
+                <img src="images/burger7.jpeg" alt="Double Stack Burger" loading="lazy" />
+                <div class="caption">Double Stack Burger</div>
+            </a>
+            <a href="#" class="burger-item" tabindex="0">
+                <img src="images/burger8.jpeg" alt="Classic Cheese Burger" loading="lazy" />
+                <div class="caption">Classic Cheese Burger</div>
+            </a>
+            <a href="#" class="burger-item" tabindex="0">
+                <img src="images/download (36).jpeg" alt="Classic Cheese Burger" loading="lazy" />
+                <div class="caption">Classic Cheese Burger</div>
+            </a>
+            <a href="#" class="burger-item" tabindex="0">
+                <img src="images/MERCADO RICAURTE.jpeg" alt="Classic Cheese Burger" loading="lazy" />
+                <div class="caption">Classic Cheese Burger</div>
+            </a>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Ready to taste perfection?</h2>
+            <p>Join us for an unforgettable dining experience</p>
+            <a href="reserve.html" class="btn btn-pulse">Book a Table Now</a>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <p>&copy; 2024 BonaBites. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Loading Script -->
+<script>
+    // Loading screen
+    window.addEventListener('load', function() {
+        const loading = document.querySelector('.loading');
+        loading.classList.add('hidden');
+        
+        // Remove loading screen after animation completes
+        setTimeout(() => {
+            loading.style.display = 'none';
+        }, 500);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu-list');
+    
+    menuToggle.addEventListener('click', function() {
+        this.classList.toggle('open');
+        menu.classList.toggle('open');
+        document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+    });
+
+    // Close menu when clicking on a link
+    document.querySelectorAll('.menu-list a').forEach(link => {
+        link.addEventListener('click', () => {
+            menuToggle.classList.remove('open');
+            menu.classList.remove('open');
+            document.body.style.overflow = '';
+        });
+    });
+
+    // Back to top button
+    const backToTopBtn = document.querySelector('.back-to-top');
+    
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            backToTopBtn.classList.add('visible');
+        } else {
+            backToTopBtn.classList.remove('visible');
+        }
+    });
+    
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    // Navbar scroll effect
+    const navbar = document.querySelector('.navbar');
+    let lastScroll = 0;
+    
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+        
+        if (currentScroll <= 0) {
+            navbar.classList.remove('scrolled');
+            return;
+        }
+        
+        if (currentScroll > lastScroll && !navbar.classList.contains('scrolled')) {
+            navbar.classList.add('scrolled');
+        } else if (currentScroll < lastScroll && navbar.classList.contains('scrolled')) {
+            navbar.classList.remove('scrolled');
+        }
+        
+        lastScroll = currentScroll;
+    });
+
+    // Add animation to elements when they come into view
+    const animateOnScroll = () => {
+        const elements = document.querySelectorAll('.burger-item, .section-header, .cta-content');
+        
+        elements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
+            const elementVisible = 150;
+            
+            if (elementTop < window.innerHeight - elementVisible) {
+                element.classList.add('animate');
+            }
+        });
+    };
+    
+    window.addEventListener('scroll', animateOnScroll);
+    // Initial check in case elements are already in view
+    animateOnScroll();
+</script>
+</body>
+</html>

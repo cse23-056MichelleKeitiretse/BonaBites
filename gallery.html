@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore our delicious burgers in the BonaBites gallery. See our gourmet creations made with premium ingredients." />
+    <meta name="theme-color" content="#0d0d1a" />
+    <title>Gallery | BonaBites - Gourmet Burgers & More</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/modern-style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<!-- Loading Screen -->
+<div class="loading">
+    <div class="loader"></div>
+</div>
+
+<!-- Back to Top Button -->
+<button class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+<header>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="navbar-container">
+            <a href="index.html" class="logo" tabindex="0">Bona<span>Bites</span></a>
+            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="menu-list" id="primary-menu" role="menubar">
+                <li class="menu-list-item" role="none"><a href="index.html" role="menuitem">Home</a></li>
+                <li class="menu-list-item" role="none"><a href="menu.html" role="menuitem">Menu</a></li>
+                <li class="menu-list-item active" role="none"><a href="gallery.html" role="menuitem" aria-current="page">Gallery</a></li>
+                <li class="menu-list-item" role="none"><a href="reserve.html" role="menuitem">Reservations</a></li>
+                <li class="menu-list-item" role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-content">
+            <h1>Our Gallery</h1>
+            <p>Take a look at our delicious creations</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Burgers That Speak for Themselves</h2>
+                <p class="section-subtitle">Each burger is a masterpiece crafted with passion and the finest ingredients</p>
+            </div>
+            
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="classic">Classic</button>
+                <button class="filter-btn" data-filter="specialty">Specialty</button>
+                <button class="filter-btn" data-filter="sides">Sides</button>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item" data-category="classic">
+                    <div class="gallery-item-inner">
+                        <img src="images/burger1.jpeg" alt="Classic Cheeseburger" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Classic Cheeseburger</h3>
+                                <p>Our signature beef patty with American cheese, lettuce, tomato, and special sauce</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item" data-category="specialty">
+                    <div class="gallery-item-inner">
+                        <img src="images/burger2.jpeg" alt="Bacon Avocado Burger" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Bacon Avocado Burger</h3>
+                                <p>Juicy beef patty topped with crispy bacon, fresh avocado, and chipotle mayo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item" data-category="specialty">
+                    <div class="gallery-item-inner">
+                        <img src="images/burger5.jpeg" alt="Mushroom Swiss Burger" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Mushroom Swiss Burger</h3>
+                                <p>Sautéed mushrooms, Swiss cheese, and garlic aioli on a brioche bun</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item" data-category="sides">
+                    <div class="gallery-item-inner">
+                        <img src="images/Fries!!!.jpeg" alt="Seasoned Fries" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Seasoned Fries</h3>
+                                <p>Crispy golden fries with our special house seasoning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item" data-category="classic">
+                    <div class="gallery-item-inner">
+                        <img src="images/burger6.jpeg" alt="Double Cheeseburger" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Double Cheeseburger</h3>
+                                <p>Two beef patties, double cheese, pickles, onions, and our special sauce</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item" data-category="sides">
+                    <div class="gallery-item-inner">
+                        <img src="images/onionrings.jpeg" alt="Crispy Onion Rings" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Onion Rings</h3>
+                                <p>Beer-battered onion rings served with chipotle mayo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-cta">
+                <h3>Hungry Yet?</h3>
+                <p>Check out our full menu or make a reservation to try these delicious burgers for yourself!</p>
+                <div class="cta-buttons">
+                    <a href="menu.html" class="btn btn-primary">View Menu</a>
+                    <a href="reserve.html" class="btn btn-outline">Reserve a Table</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <p>&copy; 2024 BonaBites. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Gallery Lightbox -->
+<div class="gallery-lightbox" id="galleryLightbox">
+    <div class="lightbox-content">
+        <button class="close-lightbox" aria-label="Close lightbox">&times;</button>
+        <img src="" alt="" class="lightbox-image">
+        <div class="lightbox-caption">
+            <h3></h3>
+            <p></p>
+        </div>
+        <button class="lightbox-nav prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-nav next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+    </div>
+</div>
+
+<script>
+    // Loading screen
+    window.addEventListener('load', function() {
+        const loading = document.querySelector('.loading');
+        loading.classList.add('hidden');
+        
+        // Remove loading screen after animation completes
+        setTimeout(() => {
+            loading.style.display = 'none';
+        }, 500);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu-list');
+    
+    menuToggle.addEventListener('click', function() {
+        this.classList.toggle('open');
+        menu.classList.toggle('open');
+        document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+    });
+
+    // Close menu when clicking on a link
+    document.querySelectorAll('.menu-list a').forEach(link => {
+        link.addEventListener('click', () => {
+            menuToggle.classList.remove('open');
+            menu.classList.remove('open');
+            document.body.style.overflow = '';
+        });
+    });
+
+    // Back to top button
+    const backToTopBtn = document.querySelector('.back-to-top');
+    
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            backToTopBtn.classList.add('visible');
+        } else {
+            backToTopBtn.classList.remove('visible');
+        }
+    });
+    
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    // Navbar scroll effect
+    const navbar = document.querySelector('.navbar');
+    let lastScroll = 0;
+    
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+        
+        if (currentScroll <= 0) {
+            navbar.classList.remove('scrolled');
+            return;
+        }
+        
+        if (currentScroll > lastScroll && !navbar.classList.contains('scrolled')) {
+            navbar.classList.add('scrolled');
+        } else if (currentScroll < lastScroll && navbar.classList.contains('scrolled')) {
+            navbar.classList.remove('scrolled');
+        }
+        
+        lastScroll = currentScroll;
+    });
+
+    // Gallery filter functionality
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            
+            // Add active class to clicked button
+            button.classList.add('active');
+            
+            const filterValue = button.getAttribute('data-filter');
+            
+            // Show/hide gallery items based on filter
+            galleryItems.forEach(item => {
+                if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    // Lightbox functionality
+    const lightbox = document.getElementById('galleryLightbox');
+    const lightboxImage = document.querySelector('.lightbox-image');
+    const lightboxCaption = document.querySelector('.lightbox-caption');
+    const closeLightbox = document.querySelector('.close-lightbox');
+    const prevButton = document.querySelector('.lightbox-nav.prev');
+    const nextButton = document.querySelector('.lightbox-nav.next');
+    
+    let currentImageIndex = 0;
+    const images = Array.from(document.querySelectorAll('.gallery-item img'));
+    
+    // Open lightbox when clicking on a gallery image
+    document.querySelectorAll('.gallery-item-inner').forEach((item, index) => {
+        item.addEventListener('click', (e) => {
+            e.preventDefault();
+            currentImageIndex = index;
+            updateLightbox();
+            lightbox.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        });
+    });
+    
+    // Close lightbox
+    closeLightbox.addEventListener('click', () => {
+        lightbox.style.display = 'none';
+        document.body.style.overflow = '';
+    });
+    
+    // Close lightbox when clicking outside the image
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            lightbox.style.display = 'none';
+            document.body.style.overflow = '';
+        }
+    });
+    
+    // Navigation between images
+    prevButton.addEventListener('click', (e) => {
+        e.stopPropagation();
+        currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+        updateLightbox();
+    });
+    
+    nextButton.addEventListener('click', (e) => {
+        e.stopPropagation();
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        updateLightbox();
+    });
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (lightbox.style.display === 'flex') {
+            if (e.key === 'Escape') {
+                lightbox.style.display = 'none';
+                document.body.style.overflow = '';
+            } else if (e.key === 'ArrowLeft') {
+                currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+                updateLightbox();
+            } else if (e.key === 'ArrowRight') {
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                updateLightbox();
+            }
+        }
+    });
+    
+    function updateLightbox() {
+        const imgSrc = images[currentImageIndex].getAttribute('src');
+        const imgAlt = images[currentImageIndex].getAttribute('alt');
+        const parentItem = images[currentImageIndex].closest('.gallery-item-inner');
+        const caption = parentItem.querySelector('h3').textContent;
+        const description = parentItem.querySelector('p').textContent;
+        
+        lightboxImage.setAttribute('src', imgSrc);
+        lightboxImage.setAttribute('alt', imgAlt);
+        lightboxCaption.querySelector('h3').textContent = caption;
+        lightboxCaption.querySelector('p').textContent = description;
+    }
+    
+    // Add animation to elements when they come into view
+    const animateOnScroll = () => {
+        const elements = document.querySelectorAll('.gallery-item, .section-title, .section-subtitle, .gallery-cta');
+        
+        elements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
+            const elementVisible = 150;
+            
+            if (elementTop < window.innerHeight - elementVisible) {
+                element.classList.add('animate');
+            }
+        });
+    };
+    
+    window.addEventListener('scroll', animateOnScroll);
+    // Initial check in case elements are already in view
+    animateOnScroll();
+</script>
+</body>
+</html>
