@@ -54,4 +54,4 @@ This project is proprietary and confidential. All rights reserved.
 
 ---
 
-Created by [Your Name]
+Created by Michelle Keitiretse
